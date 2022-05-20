@@ -1,4 +1,4 @@
-import Resume from "./Resume";
+import Resume from "./Components/Resume";
 import './App.css';
 
 function App() {

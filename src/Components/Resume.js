@@ -1,6 +1,52 @@
 import './Resume.css';
-import face from './Images/face.jpg'
+import face from '../Images/face.jpg'
+import WorkExperience from "./WorkExperience";
+import Skills from "./Skills";
 
+// Any section listing more than 2 items or needing future updating I used props
+
+// Create array for WorkExperience props
+const workExp = [
+    {
+        position: 'Full Stack Web Developer',
+        timeline: '2022 - Present',
+        where: 'Freelance'
+    },
+    {
+        position: 'Cryptocurrency Investor & Trader',
+        timeline: '2017 - Present',
+        where: 'Part-time'
+    },
+    {
+        position: 'Location Sound Mixer/Recordist',
+        timeline: '2013 - 2022',
+        where: 'Freelance'
+    },
+    {
+        position: 'Office Assistant',
+        timeline: '2012 - 2013',
+        where: 'Red Flag Design & Marketing'
+    },
+    {
+        position: 'Assistant Final Mix Engineer',
+        timeline: '2012',
+        where: 'The Wild'
+    },
+    {
+        position: 'Final Mix Engineer',
+        timeline: '2011 - 2012',
+        where: '344 Studios'
+    },
+]
+
+// Create array for Skills props
+const skills = [
+    'HTML', 'CSS', 'Javascript', 'Bootstrap', 'JQuery', 'React', 'Cryptocurrency Researching',
+    'Cryptocurrency Trading & Investing', 'Forex Trading', 'Location Sound Mixing & Recording',
+    'Audio Post Production'
+]
+
+// Main page layout
 function Resume() {
     return (
         <div className={'container'}>
@@ -57,79 +103,12 @@ function Resume() {
                         {/* Work Experience */}
                         <h3 className={'pt-5'}><i className="fa-solid fa-briefcase"></i> Work Experience</h3>
                         <hr/>
-
-                        <h4 className={'pt-3'}>
-                            Full Stack Developer
-                        </h4>
-                        <p>
-                            2022 - Present
-                        </p>
-                        <p>
-                            Freelance
-                        </p>
-
-                        <h4 className={'pt-1'}>
-                            Cryptocurrency Investor & Trader
-                        </h4>
-                        <p>
-                            2017 - Present
-                        </p>
-                        <p>
-                            Part time
-                        </p>
-
-                        <h4 className={'pt-1'}>
-                            Location Sound Mixer/Recordist
-                        </h4>
-                        <p>
-                            2013 - 2022
-                        </p>
-                        <p>
-                            Freelance
-                        </p>
-
-                        <h4 className={'pt-1'}>
-                            Office Assistant
-                        </h4>
-                        <p>
-                            2012 - 2013
-                        </p>
-                        <p>
-                            Red Flag Design & Marketing
-                        </p>
-
-                        <h4 className={'pt-1'}>
-                            Assistant final Mix Engineer
-                        </h4>
-                        <p>
-                            2012
-                        </p>
-                        <p>
-                            The Wild
-                        </p>
-
-                        <h4 className={'pt-1'}>
-                            Final Mix Engineer
-                        </h4>
-                        <p>
-                            2011 - 2012
-                        </p>
-                        <p>
-                            344 Studios
-                        </p>
+                        <WorkExperience workExp={workExp}/>
 
                         {/* Skills */}
                         <h3 className={'pt-5'}><i className="fa-solid fa-laptop-code"></i> Skills</h3>
                         <hr/>
-                        <p className={'pt-3'}>
-                            HTML // CSS // Javascript // Bootstrap // Jquery // React
-                        </p>
-                        <p>
-                            Cryptocurrency Trading & Investing // Forex Trading // Research & Analysis in Crypto Market
-                        </p>
-                        <p>
-                            Location sound mixing & recording // Audio post production
-                        </p>
+                        <Skills skills={skills}/>
 
                         {/* Education */}
                         <h3 className={'pt-5'}><i className="fa-solid fa-graduation-cap"></i> Education</h3>
