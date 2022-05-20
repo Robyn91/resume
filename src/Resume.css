@@ -1,0 +1,22 @@
+.imgDiv {
+    background-color: #ccdffa;
+    border-radius: 2%;
+    box-shadow: 3px 4px 5px #888888;
+}
+
+.mainDiv {
+    background-color: #ccdffa;
+    border-radius: 1%;
+    box-shadow: 3px 4px 5px #888888;
+}
+
+.face {
+    height: 170px;
+    margin-top: 15px;
+    border: solid 1px #706f6f;
+}
+
+hr {
+    margin-left: 30px;
+    margin-right: 30px;
+}
