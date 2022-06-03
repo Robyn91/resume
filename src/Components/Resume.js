@@ -5,37 +5,64 @@ import Skills from "./Skills";
 
 // Any section listing more than 2 items or needing future updating I used props
 
-// Create array for WorkExperience props
+// Array for WorkExperience props
 const workExp = [
     {
         position: 'Full Stack Web Developer',
         timeline: '2022 - Present',
-        where: 'Freelance'
+        where: 'Freelance',
+        skills: 'During my time as a crypto trader, I realised that if I want to take my career in this space further,' +
+            'I need to upskill by becoming a developer. There is a massive edge in having this skill' +
+            'so I am heads down learning how to code in 2022.'
     },
     {
         position: 'Cryptocurrency Investor & Trader',
         timeline: '2017 - Present',
-        where: 'Part-time'
+        where: 'Part-time',
+        skills: 'I started focusing more seriously on the Crypto space in 2017. I have kept up with latest developments' +
+            'in the space as well as trading & investing in my spare time. I have connected with many other traders in the' +
+            'space and I have been quite successful in fine tuning my edge. The skills that I have acquired over the years' +
+            'include on chain research (using Etherscan mainly, but also proficient in using Nansen & other on chain analytics' +
+            'tools), keeping up with the accounts of influential people on chain and on social media platforms, studying the ' +
+            'effects of macro economics on the crypto market, and mostly just' +
+            'staying informed and hungry for self improvement has allowed me to be successful in this space. '
+    },
+    {
+        position: 'Sales/Accounts/Business Development',
+        timeline: '2018 - 2022',
+        where: 'Cathrich Procurement & Export',
+        skills: 'I wanted to dedicate more time to crypto research & trading so I took an office job which allowed me to be flexible' +
+            'with my time. I learnt many valuable skills working at Cathrich. I managed many portfolios of clients and was responsible' +
+            'for procuring their needed material as well as the logistics in getting the material to them. I was also responsible for' +
+            'maintaining these relationships and building new ones. I also handled the accounts department.'
     },
     {
         position: 'Location Sound Mixer/Recordist',
-        timeline: '2013 - 2022',
-        where: 'Freelance'
+        timeline: '2013 - 2018',
+        where: 'Freelance',
+        skills: 'My passion for a technical position brought me back to Sound. I worked on many local film &' +
+            'television productions as the head of sound. I learnt how to lead a team.'
     },
     {
         position: 'Office Assistant',
         timeline: '2012 - 2013',
-        where: 'Red Flag Design & Marketing'
+        where: 'Red Flag Design & Marketing',
+        skills: 'To expand my knowledge base I took a job at a PR firm. Here I honed in on my organisational skills,' +
+            'flexibility and marketing/PR.'
     },
     {
         position: 'Assistant Final Mix Engineer',
         timeline: '2012',
-        where: 'The Wild'
+        where: 'The Wild',
+        skills: 'My first official job working underneath the final mix engineer, preparing his daily mixes.' +
+            'Learnt how to work as part of a team.'
     },
     {
         position: 'Final Mix Engineer',
         timeline: '2011 - 2012',
-        where: '344 Studios'
+        where: '344 Studios',
+        skills: 'This was an intern position, where I put in many hours during my studies to master' +
+            'the craft of final mixing. I mostly worked on commercials for television & radio.'
     },
 ]
 

@@ -10,6 +10,9 @@ function WorkExperience(props) {
             <div>
                 {work.where}
             </div>
+            <div>
+                {work.skills}
+            </div>
         </div>
     )
     return (
